@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Admin Penmaba Pasca UNJ</title>
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <link rel="stylesheet" href="plugins/datatables/dataTables.bootstrap.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+  <link rel="stylesheet" href="css/AdminLTE.min.css">
+  <link rel="stylesheet" href="css/skins/_all-skins.min.css">
+  <link rel="stylesheet" href="plugins/iCheck/flat/blue.css">
+  <link rel="stylesheet" href="plugins/datepicker/datepicker3.css">
+  <link rel="stylesheet" href="plugins/daterangepicker/daterangepicker.css">
+  <link rel="stylesheet" href="plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
+  <link rel="stylesheet" href="css/toggle.css">
+  <link rel="shortcut icon" href="images/logo_unj.png"/>
+</head>
+<body class="hold-transition skin-blue sidebar-mini">
+  <div class="wrapper">
+    <header class="main-header">
+      <a href="index.html" class="logo" style="background-color:#1b5e20">
+        <span class="logo-mini"><b>A</b>P<b>P</b></span>
+        <span class="logo-lg"><b>Admin</b>Penmaba<b>Pasca</b></span>
+      </a>
+      <nav class="navbar navbar-static-top">
+        <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+          <span class="sr-only">Toggle navigation</span>
+        </a>
+        <div class="navbar-custom-menu">
+          <ul class="nav navbar-nav">
+            <li class="dropdown user user-menu">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                <img src="images/default-profile.png" class="user-image" alt="User Image">
+                <span class="hidden-xs">Hanifa Fissalma</span>
+              </a>
+              <ul class="dropdown-menu">
+                <li class="user-header" style="background-color: #1f7e26">
+                  <img src="images/default-profile.png" class="img-circle" alt="User Image">
+                  <p>
+                    Hanifa Fissalma - Admin Pustikom
+                  </p>
+                </li>
+                <li class="user-footer">
+                  <div class="pull-right">
+                    <a href="#" class="btn btn-default btn-flat">Keluar</a>
+                  </div>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <aside class="main-sidebar">
+      <section class="sidebar">->
+        <div class="user-panel">
+          <div class="pull-left image">
+            <img src="images/default-profile.png" class="img-circle" alt="User Image">
+          </div>
+          <div class="pull-left info">
+            <p>Hanifa Fissalma</p>
+            <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
+          </div>
+        </div>
+        <ul class="sidebar-menu">
+          <li class="header">MAIN NAVIGATION</li>
+          <li>
+            <a href="index.html">
+              <i class="fa fa-dashboard"></i> <span>Halaman Utama</span>
+            </a>
+          </li>
+          <li>
+            <a href="daftar-user.html">
+              <i class="fa fa-user"></i> <span>Manajemen User</span>
+            </a>
+          </li>
+          <li class="treeview">
+            <a href="#">
+              <i class="fa fa-users"></i> <span>Manajemen Peserta</span>
+              <span class="pull-right-container">
+                <i class="fa fa-angle-left pull-right"></i>
+              </span>
+            </a>
+            <ul class="treeview-menu">
+              <li>
+                <a href="#"><i class="fa fa-circle-o text-blue"></i> Peserta S2
+                  <span class="pull-right-container">
+                    <i class="fa fa-angle-left pull-right"></i>
+                  </span>
+                </a>
+                <ul class="treeview-menu">
+                  <li><a href="s2-terdaftar.html"><i class="fa fa-circle-o"></i> Terdaftar</a></li>
+                  <li><a href="s2-bayar.html"><i class="fa fa-circle-o"></i> Sudah Bayar</a></li>
+                  <li><a href="s2-kartu.html"><i class="fa fa-circle-o"></i> Cetak Kartu</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-circle-o text-blue"></i> Peserta S3
+                  <span class="pull-right-container">
+                    <i class="fa fa-angle-left pull-right"></i>
+                  </span>
+                </a>
+                <ul class="treeview-menu">
+                  <li><a href="s3-terdaftar.html"><i class="fa fa-circle-o"></i> Terdaftar</a></li>
+                  <li><a href="s3-bayar.html"><i class="fa fa-circle-o"></i> Sudah Bayar</a></li>
+                  <li><a href="s3-kartu.html"><i class="fa fa-circle-o"></i> Cetak Kartu</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="daftar-lokasi.html">
+              <i class="fa fa-map-marker"></i> <span>Manajemen Lokasi</span>
+            </a>
+          </li>
+           <li>
+            <a href="daftar-ruang.html">
+              <i class="fa fa-building"></i> <span>Manajemen Ruang</span>
+            </a>
+          </li>
+          <li class="treeview">
+            <a href="#">
+              <i class="fa fa-file-o"></i> <span>Rekapitulasi</span>
+              <span class="pull-right-container">
+                <i class="fa fa-angle-left pull-right"></i>
+              </span>
+            </a>
+            <ul class="treeview-menu">
+              <li><a href="monitoring.html"><i class="fa fa-circle-o"></i> Monitoring Panel</a></li>
+              <li><a href="per-jenjang.html"><i class="fa fa-circle-o"></i> Per Jenjang</a></li>
+              <li><a href="per-prodi.html"><i class="fa fa-circle-o"></i> Per program Studi</a></li>
+              <li><a href="per-tahapan.html"><i class="fa fa-circle-o"></i> Per Tahapan</a></li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+    </aside>
+    <div class="content-wrapper">
+      <section class="content-header">
+        <h1>
+          Rekapitulasi
+          <small>Per Program Studi</small>
+        </h1>
+        <ol class="breadcrumb">
+          <li><a href="#"><i class="fa fa-file-o"></i> Rekapitulasi</a></li>
+          <li><a href="#" class="active">Per Program Studi</a></li>
+        </ol>
+      </section>
+      <section class="content">
+        <br>
+        <div class="box">
+          <div class="box-header">
+            
+          </div>
+          <div class="box-body">
+            <table id="example1" class="table table-bordered table-striped">
+              <thead>
+                <tr>
+                  <th>Kode Prodi</th>
+                  <th>Nama Program Studi</th>
+                  <th>Jenjang</th>
+                  <th>Jumlah</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1234</td>
+                  <td>Bimbingan dan Konseling</td>
+                  <td>S2 Fakultas</td>
+                  <td>30</td>
+                </tr>
+                <tr>
+                  <td>2345</td>
+                  <td>Pendidikan Kimia</td>
+                  <td>S2 Fakultas</td>
+                  <td>30</td>
+                </tr>
+                <tr>
+                  <td>3456</td>
+                  <td>Teknologi Pendidikan</td>
+                  <td>S2 Pascasarjana</td>
+                  <td>50</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Kode Prodi</th>
+                  <th>Nama Program Studi</th>
+                  <th>Jenjang</th>
+                  <th>Jumlah</th>
+                </tr>
+              </tfoot>
+            </table>
+          </div>
+        </div>
+      </section>
+    </div>
+    <footer class="main-footer">
+      <strong>Pustikom Developer UNJ.</strong>
+    </footer>
+  </div>
+</body>
+    <script src="plugins/jQuery/jquery-2.2.3.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+    <script>
+      $.widget.bridge('uibutton', $.ui.button);
+    </script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.11.2/moment.min.js"></script>
+    <script src="plugins/daterangepicker/daterangepicker.js"></script>
+    <script src="plugins/datepicker/bootstrap-datepicker.js"></script>
+    <script src="plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js"></script>
+    <script src="plugins/slimScroll/jquery.slimscroll.min.js"></script>
+    <script src="plugins/fastclick/fastclick.js"></script>
+    <script src="js/app.min.js"></script>
+    <script src="js/demo.js"></script>
+    <script src="plugins/datatables/jquery.dataTables.min.js"></script>
+    <script src="plugins/datatables/dataTables.bootstrap.min.js"></script>
+    <script>
+      $(function () {
+        $("#example1").DataTable();
+        $('#example2').DataTable({
+          "paging": true,
+          "lengthChange": false,
+          "searching": false,
+          "ordering": true,
+          "info": true,
+          "autoWidth": false
+        });
+      });
+      $('.angka').on('input', function (event) { 
+        this.value = this.value.replace(/[^0-9]/g, '');
+        });
+    </script>
+</html>
