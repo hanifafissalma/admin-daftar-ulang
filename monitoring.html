@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Admin Penmaba Pasca UNJ</title>
+  <title>Admin Daftar Ulang Pascasarjana UNJ</title>
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <link rel="stylesheet" href="plugins/datatables/dataTables.bootstrap.css">
   <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -22,8 +22,8 @@
   <div class="wrapper">
     <header class="main-header">
       <a href="index.html" class="logo" style="background-color:#1b5e20">
-        <span class="logo-mini"><b>A</b>P<b>P</b></span>
-        <span class="logo-lg"><b>Admin</b>Penmaba<b>Pasca</b></span>
+        <span class="logo-mini"><b>A</b>P<b>U</b></span>
+        <span class="logo-lg"><b>Admin</b>Daftar<b>Ulang</b></span>
       </a>
       <nav class="navbar navbar-static-top">
         <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
@@ -72,55 +72,6 @@
               <i class="fa fa-dashboard"></i> <span>Halaman Utama</span>
             </a>
           </li>
-          <li>
-            <a href="daftar-user.html">
-              <i class="fa fa-user"></i> <span>Manajemen User</span>
-            </a>
-          </li>
-          <li class="treeview">
-            <a href="#">
-              <i class="fa fa-users"></i> <span>Manajemen Peserta</span>
-              <span class="pull-right-container">
-                <i class="fa fa-angle-left pull-right"></i>
-              </span>
-            </a>
-            <ul class="treeview-menu">
-              <li>
-                <a href="#"><i class="fa fa-circle-o text-blue"></i> Peserta S2
-                  <span class="pull-right-container">
-                    <i class="fa fa-angle-left pull-right"></i>
-                  </span>
-                </a>
-                <ul class="treeview-menu">
-                  <li><a href="s2-terdaftar.html"><i class="fa fa-circle-o"></i> Terdaftar</a></li>
-                  <li><a href="s2-bayar.html"><i class="fa fa-circle-o"></i> Sudah Bayar</a></li>
-                  <li><a href="s2-kartu.html"><i class="fa fa-circle-o"></i> Cetak Kartu</a></li>
-                </ul>
-              </li>
-              <li>
-                <a href="#"><i class="fa fa-circle-o text-blue"></i> Peserta S3
-                  <span class="pull-right-container">
-                    <i class="fa fa-angle-left pull-right"></i>
-                  </span>
-                </a>
-                <ul class="treeview-menu">
-                  <li><a href="s3-terdaftar.html"><i class="fa fa-circle-o"></i> Terdaftar</a></li>
-                  <li><a href="s3-bayar.html"><i class="fa fa-circle-o"></i> Sudah Bayar</a></li>
-                  <li><a href="s3-kartu.html"><i class="fa fa-circle-o"></i> Cetak Kartu</a></li>
-                </ul>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <a href="daftar-lokasi.html">
-              <i class="fa fa-map-marker"></i> <span>Manajemen Lokasi</span>
-            </a>
-          </li>
-           <li>
-            <a href="daftar-ruang.html">
-              <i class="fa fa-building"></i> <span>Manajemen Ruang</span>
-            </a>
-          </li>
           <li class="treeview">
             <a href="#">
               <i class="fa fa-file-o"></i> <span>Rekapitulasi</span>
@@ -130,9 +81,8 @@
             </a>
             <ul class="treeview-menu">
               <li><a href="monitoring.html"><i class="fa fa-circle-o"></i> Monitoring Panel</a></li>
-              <li><a href="per-jenjang.html"><i class="fa fa-circle-o"></i> Per Jenjang</a></li>
               <li><a href="per-prodi.html"><i class="fa fa-circle-o"></i> Per program Studi</a></li>
-              <li><a href="per-tahapan.html"><i class="fa fa-circle-o"></i> Per Tahapan</a></li>
+              <li><a href="per-fakultas.html"><i class="fa fa-circle-o"></i> Per Fakultas</a></li>
             </ul>
           </li>
         </ul>
@@ -153,20 +103,16 @@
         <br>
         <div class="box">
           <div class="box-header">
-            
           </div>
           <div class="box-body">
             <table id="example1" class="table table-bordered table-striped">
               <thead>
                 <tr>
                   <th>Jenjang</th>
-                  <th>Peserta Terdaftar</th>
-                  <th>Peserta belum bayar tagihan</th>
-                  <th>Peserta sudah bayar tagihan</th>
-                  <th>Peserta belum cetak kartu</th>
-                  <th>Ruangan Tersedia</th>
-                  <th>Ruangan terpakai</th>
-                  <th>Total Ruangan</th>
+                  <th>Terdaftar</th>
+                  <th>Belum Daftar Ulang</th>
+                  <th>Belum Bayar</th>
+                  <th>Sudah Cetak Noreg dan Password</th>
                 </tr>
               </thead>
               <tbody>
@@ -176,9 +122,6 @@
                   <td>200</td>
                   <td>300</td>
                   <td>300</td>
-                  <td>200</td>
-                  <td>150</td>
-                  <td>350</td>
                 </tr>
                 <tr>
                   <td>S2 Pascasarjana</td>
@@ -186,9 +129,6 @@
                   <td>200</td>
                   <td>300</td>
                   <td>300</td>
-                  <td>200</td>
-                  <td>150</td>
-                  <td>350</td>
                 </tr>
                 <tr>
                   <td>S3 Pascasarjana</td>
@@ -196,9 +136,6 @@
                   <td>200</td>
                   <td>300</td>
                   <td>300</td>
-                  <td>200</td>
-                  <td>150</td>
-                  <td>350</td>
                 </tr>
               </tbody>
               <tfoot>
@@ -208,9 +145,6 @@
                   <th>600</th>
                   <th>900</th>
                   <th>900</th>
-                  <th>600</th>
-                  <th>450</th>
-                  <th>1050</th>
                 </tr>
               </tfoot>
             </table>
